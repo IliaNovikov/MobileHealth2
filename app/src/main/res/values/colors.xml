@@ -8,4 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="milky">#ECECEC</color>
+    <color name="pfc_color">#358038</color>
+    <color name="water_regime_color">#4AB4B4</color>
+    <color name="steps_color">#4156C5</color>
+    <color name="medicine_color">#CE4D4D</color>
+    <color name="breath_color">#B4B4B4</color>
+    <color name="workout_color">#EFA03E</color>
 </resources>
