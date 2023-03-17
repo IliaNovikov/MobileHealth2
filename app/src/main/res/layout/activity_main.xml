@@ -29,9 +29,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/milky"
+        android:paddingTop="8dp"
+        app:itemIconSize="36dp"
+        app:itemIconTint="@android:color/holo_green_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/main_bottom_menu" />
 
     <FrameLayout
         android:id="@+id/main_frameLayout"

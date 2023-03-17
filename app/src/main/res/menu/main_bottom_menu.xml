@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:icon="@drawable/home_changed_icon"/>
+    <item android:icon="@drawable/profile_changed_icon" />
+</menu>
