@@ -2,5 +2,6 @@
     <string name="app_name" translatable="false">MobileHealth</string>
     <string name="main_page">Main</string>
     <string name="profile_page">Profile</string>
+    <string name="meds_page" translatable="false">Лекарства</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
