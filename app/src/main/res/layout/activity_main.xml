@@ -27,7 +27,7 @@
             android:id="@+id/tvFragmentName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_page"
+            android:text=""
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:textStyle="bold"/>

@@ -15,16 +15,20 @@ import com.example.mobilehealth.R;
 
 import java.util.List;
 
+import interfaces.OnSectionClickInterface;
 import models.Section;
+import services.FragmentService;
 
 public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.ViewHolder> {
 
     private LayoutInflater layoutInflater;
     private List<Section> sections;
+    private OnSectionClickInterface onSectionClickInterface;
 
-    public SectionAdapter(Context context, List<Section> sections) {
+    public SectionAdapter(Context context, List<Section> sections, OnSectionClickInterface onSectionClickInterface) {
         this.layoutInflater = LayoutInflater.from(context);
         this.sections = sections;
+        this.onSectionClickInterface = onSectionClickInterface;
     }
 
     @NonNull
@@ -40,6 +44,12 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.ViewHold
         holder.imgSection.setImageResource(section.getImageResource());
         holder.tvSection.setText(section.getTitle());
         holder.constraintLayout.setBackgroundColor(section.getBackgroundColor());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onSectionClickInterface.onClick(section, position);
+            }
+        });
     }
 
     @Override
