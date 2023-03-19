@@ -41,7 +41,7 @@
                 android:fontFamily="@font/candara"
                 android:inputType="number"
                 android:paddingTop="20pt"
-                android:text="Height..."
+                android:text="@string/height_et"
                 android:textAlignment="center"
                 android:textColorHint="#A0A0A0" />
 
@@ -54,7 +54,7 @@
                 android:fontFamily="@font/candara"
                 android:inputType="number"
                 android:paddingTop="20pt"
-                android:text="Weight..."
+                android:text="@string/weight_et"
                 android:textAlignment="center"
                 android:textColorHint="#A1A1A1" />
 
@@ -70,7 +70,7 @@
                 android:inputType="date"
                 android:onClick="dateClick"
                 android:paddingTop="20pt"
-                android:text="Date of birth...."
+                android:text="@string/dateBirth"
                 android:textAlignment="center"
                 android:textColorHint="#A1A1A1" />
         </LinearLayout>

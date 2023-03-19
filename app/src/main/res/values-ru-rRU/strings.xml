@@ -11,4 +11,7 @@
     <string name="fat_et">Жиры...</string>
     <string name="carbs_et">Углеводы...</string>
     <string name="add_bt">Добавить</string>
+    <string name="height_et">Рост...</string>
+    <string name="weight_et">Вес...</string>
+    <string name="dateBirth">Дата рождения...</string>
 </resources>
