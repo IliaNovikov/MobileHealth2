@@ -1,19 +1,22 @@
 package com.example.mobilehealth;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.MenuItem;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import services.FragmentService;
 
 public class MainActivity extends AppCompatActivity {
 
+    private BottomNavigationView menu;
     private FrameLayout frameLayout;
     private TextView tvFragmentName;
     private Toolbar toolbarMain;
@@ -34,16 +37,37 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         getSupportActionBar().hide();
         init();
+
         FragmentService.currentFragmentTitle = getString(R.string.main_page);
         FragmentService.currentFragmentColor = getColor(R.color.black);
         FragmentService.setFragment(this, new MainFragment(), R.id.main_frameLayout);
+
+        menu.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.homeMenuItem:
+                        FragmentService.currentFragmentTitle = getString(R.string.main_page);
+                        FragmentService.currentFragmentColor = getColor(R.color.black);
+                        FragmentService.setFragment(MainActivity.this, new MainFragment(), R.id.main_frameLayout);
+                        return true;
+                    case R.id.profileMenuItem:
+                        FragmentService.currentFragmentTitle = getString(R.string.profile_page);
+                        FragmentService.currentFragmentColor = getColor(R.color.black);
+                        FragmentService.setFragment(MainActivity.this, new ProfileFragment(), R.id.main_frameLayout);
+                }
+                return false;
+            }
+        });
     }
 
     private void init(){
         frameLayout = findViewById(R.id.main_frameLayout);
         tvFragmentName = findViewById(R.id.tvFragmentName);
         toolbarMain = findViewById(R.id.toolbar);
+        menu = findViewById(R.id.bottomNavigationView);
     }
 }

@@ -13,17 +13,14 @@
         android:orientation="vertical">
 
         <ImageButton
-            android:id="@+id/settingButton"
-            android:layout_width="40pt"
-            android:layout_height="40pt"
+            android:id="@+id/btnSettings"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
             android:layout_gravity="right"
 
             android:backgroundTint="#00196F49"
-            android:backgroundTintMode="src_in"
-            android:onClick="playStuff"
             android:scaleType="fitXY"
             android:src="@drawable/settings_icon"
-            tools:ignore="SpeakableTextPresentCheck"
             app:tint="#4CAF50" />
 
         <LinearLayout
@@ -33,7 +30,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editTextHeight"
+                android:id="@+id/etHeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#196F49"
@@ -46,7 +43,7 @@
                 android:textColorHint="#A0A0A0" />
 
             <EditText
-                android:id="@+id/editTextWeight"
+                android:id="@+id/etWeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#196F49"
@@ -59,7 +56,7 @@
                 android:textColorHint="#A1A1A1" />
 
             <EditText
-                android:id="@+id/editTextDate"
+                android:id="@+id/etDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#196F49"
