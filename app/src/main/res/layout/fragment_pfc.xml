@@ -13,21 +13,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/PfcToolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#358038">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/pfc_page"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-        </androidx.appcompat.widget.Toolbar>
-
         <LinearLayout
             android:id="@+id/llPfcCounters"
             android:layout_width="match_parent"
