@@ -22,7 +22,7 @@
                 android:layout_gravity="center"
                 android:text="@string/meds_page"
                 android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
         </androidx.appcompat.widget.Toolbar>
 
         <androidx.recyclerview.widget.RecyclerView
