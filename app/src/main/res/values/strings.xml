@@ -2,5 +2,14 @@
     <string name="app_name" translatable="false">MobileHealth</string>
     <string name="main_page">Main</string>
     <string name="profile_page">Profile</string>
+    <string name="meds_page">Medicals</string>
+    <string name="pfc_page">PFC</string>
+    <string name="protein_tv">Proteins:</string>
+    <string name="fat_tv">Fats:</string>
+    <string name="carbs_tv">Carbs:</string>
+    <string name="protein_et">Proteins...</string>
+    <string name="fat_et">Fats...</string>
+    <string name="carbs_et">Carbs...</string>
+    <string name="add_bt">Add</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
