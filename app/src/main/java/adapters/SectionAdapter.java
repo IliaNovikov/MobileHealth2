@@ -56,6 +56,7 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.ViewHold
     public int getItemCount() {
         return sections.size();
     }
+    //класс ViewHolder'а для recycleview
     class ViewHolder extends RecyclerView.ViewHolder{
         private ImageView imgSection;
         private TextView tvSection;

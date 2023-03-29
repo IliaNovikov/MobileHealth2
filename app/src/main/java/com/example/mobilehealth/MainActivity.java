@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
@@ -13,6 +15,7 @@ import android.widget.TextView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import services.FragmentService;
+import viewmodels.MainActivityVM;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbarMain;
     private String fragmentName;
     private int fragmentColor;
+    private MainActivityVM vm;
 
     public void setFragmentColor(int fragmentColor) {
         this.fragmentColor = fragmentColor;
@@ -38,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //сокрытие экшнбара активности
         getSupportActionBar().hide();
         init();
 
@@ -46,18 +51,22 @@ public class MainActivity extends AppCompatActivity {
         FragmentService.setFragment(this, new MainFragment(), R.id.main_frameLayout);
 
         menu.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
+                    //нажатие на кнопку главной
                     case R.id.homeMenuItem:
                         FragmentService.currentFragmentTitle = getString(R.string.main_page);
                         FragmentService.currentFragmentColor = getColor(R.color.black);
                         FragmentService.setFragment(MainActivity.this, new MainFragment(), R.id.main_frameLayout);
                         return true;
+                        //нажатие на кнопку профиля
                     case R.id.profileMenuItem:
                         FragmentService.currentFragmentTitle = getString(R.string.profile_page);
                         FragmentService.currentFragmentColor = getColor(R.color.black);
                         FragmentService.setFragment(MainActivity.this, new ProfileFragment(), R.id.main_frameLayout);
+                        return true;
                 }
                 return false;
             }
@@ -69,5 +78,6 @@ public class MainActivity extends AppCompatActivity {
         tvFragmentName = findViewById(R.id.tvFragmentName);
         toolbarMain = findViewById(R.id.toolbar);
         menu = findViewById(R.id.bottomNavigationView);
+        vm = new ViewModelProvider(this).get(MainActivityVM.class);
     }
 }
