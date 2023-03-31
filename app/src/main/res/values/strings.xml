@@ -14,4 +14,9 @@
     <string name="height_et">Height...</string>
     <string name="weight_et">Weight...</string>
     <string name="dateBirth">Date of birth...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="steps_today">Steps today:</string>
+    <string name="of_tv">of</string>
+    <string name="achiv_tv1">You have met the goal for</string>
+    <string name="achiv_tv2">days!</string>
 </resources>
