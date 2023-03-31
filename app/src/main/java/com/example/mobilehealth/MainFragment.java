@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import adapters.SectionAdapter;
+import com.example.mobilehealth.adapters.SectionAdapter;
 import interfaces.OnSectionClickInterface;
 import models.Section;
 import services.FragmentService;
@@ -53,10 +53,20 @@ public class MainFragment extends Fragment {
                 FragmentService.currentFragmentColor = section.getBackgroundColor();
                 switch (position){
                     case 0:
-                        FragmentService.setFragment(getActivity(), new PFCFragment(), R.id.main_frameLayout);
+                        ((MainActivity)getActivity()).navController.navigate(R.id.action_mainFragment_to_PFCFragment2);
+                        break;
+                    case 1:
+                        break;
+                    case 2:
                         break;
                     case 3:
-                        FragmentService.setFragment(getActivity(), new MedsFragment(), R.id.main_frameLayout);
+                        ((MainActivity)getActivity()).navController.navigate(R.id.action_mainFragment_to_medsFragment2);
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        ((MainActivity)getActivity()).navController.navigate(R.id.action_mainFragment_to_workoutFragment2);
+
                 }
             }
         };

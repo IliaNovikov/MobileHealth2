@@ -1,4 +1,4 @@
-package adapters;
+package com.example.mobilehealth.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -17,7 +17,6 @@ import java.util.List;
 
 import interfaces.OnSectionClickInterface;
 import models.Section;
-import services.FragmentService;
 
 public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.ViewHolder> {
 
