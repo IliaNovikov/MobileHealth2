@@ -11,7 +11,19 @@
     <string name="fat_et">Fats...</string>
     <string name="carbs_et">Carbs...</string>
     <string name="add_bt">Add</string>
-    <string name="height_et">Heig ht...</string>
+    <string name="height_et">Height...</string>
     <string name="weight_et">Weight...</string>
-    <string name="dateBirth">Date of birth...</string>
+    <string name="date_birth">Date of birth...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="breast_workout_title">Breast</string>
+    <string name="back_workout_title">Back</string>
+    <string name="abs_workout_title">ABS</string>
+    <string name="legs_workout_title">Legs</string>
+    <string name="full_body_workout_title">Full body</string>
+    <string name="breast_workout_short_description">Other muscles: shoulders, triceps</string>
+    <string name="back_workout_short_description">Other muscles: biceps, forearms</string>
+    <string name="abs_workout_short_description">Other muscles: legs</string>
+    <string name="legs_workout_short_description">Other muscles: lower back</string>
+    <string name="full_body_workout_short_description">Other muscles: none</string>
 </resources>

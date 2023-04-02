@@ -13,5 +13,15 @@
     <string name="add_bt">Добавить</string>
     <string name="height_et">Рост...</string>
     <string name="weight_et">Вес...</string>
-    <string name="dateBirth">Дата рождения...</string>
+    <string name="date_birth">Дата рождения...</string>
+    <string name="breast_workout_title">Грудь</string>
+    <string name="back_workout_title">Спина</string>
+    <string name="abs_workout_title">Кор</string>
+    <string name="legs_workout_title">Ноги</string>
+    <string name="full_body_workout_title">Все тело</string>
+    <string name="breast_workout_short_description">Другие мышцы: плечи, трицепсы</string>
+    <string name="back_workout_short_description">Другие мышцы: бицепсы, предплечья</string>
+    <string name="abs_workout_short_description">Другие мышцы: ноги</string>
+    <string name="legs_workout_short_description">Другие мышцы: поясницы</string>
+    <string name="full_body_workout_short_description">Другие мышцы: нет</string>
 </resources>
