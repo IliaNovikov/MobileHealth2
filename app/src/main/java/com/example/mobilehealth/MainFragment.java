@@ -76,10 +76,10 @@ public class MainFragment extends Fragment {
     }
     private void listInitialization(){
         sections.add(new Section(R.drawable.pfc_icon, getString(R.string.pfc_page),  getResources().getColor(R.color.pfc_color)));
-        sections.add(new Section(R.drawable.water_glass_icon, "Водный режим", getResources().getColor(R.color.water_regime_color)));
-        sections.add(new Section(R.drawable.steps_icon, "Шаги", getResources().getColor(R.color.steps_color)));
+        sections.add(new Section(R.drawable.water_glass_icon, getString(R.string.wrp_page), getResources().getColor(R.color.water_regime_color)));
+        sections.add(new Section(R.drawable.steps_icon, getString(R.string.steps_page), getResources().getColor(R.color.steps_color)));
         sections.add(new Section(R.drawable.medicine, getString(R.string.meds_page), getResources().getColor(R.color.medicine_color)));
-        sections.add(new Section(R.drawable.breath_icon, "Дыхательные техники", getResources().getColor(R.color.breath_color)));
-        sections.add(new Section(R.drawable.workout_icon, "Тренировки", getResources().getColor(R.color.workout_color)));
+        sections.add(new Section(R.drawable.breath_icon, getString(R.string.bt_page), getResources().getColor(R.color.breath_color)));
+        sections.add(new Section(R.drawable.workout_icon, getString(R.string.workout_page), getResources().getColor(R.color.workout_color)));
     }
 }

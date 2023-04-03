@@ -28,5 +28,9 @@
     <string name="abs_workout_short_description">Other muscles: legs</string>
     <string name="legs_workout_title">Legs</string>
     <string name="legs_workout_short_description">Other muscles: lower back</string>
+    <string name="wrp_page">Water regime</string>
+    <string name="steps_page">Steps</string>
+    <string name="bt_page">Breath Technics</string>
+    <string name="workout_page">Workout</string>
 
 </resources>

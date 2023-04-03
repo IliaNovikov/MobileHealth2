@@ -28,4 +28,8 @@
     <string name="abs_workout_short_description">Другие мышцы: ноги</string>
     <string name="legs_workout_title">Ноги</string>
     <string name="legs_workout_short_description">Другие мышцы: поясница</string>
+    <string name="wrp_page">Водный режим</string>
+    <string name="steps_page">Шаги</string>
+    <string name="bt_page">Дыхательные техники</string>
+    <string name="workout_page">Тренировки</string>
 </resources>
