@@ -13,5 +13,5 @@
     <string name="add_bt">Добавить</string>
     <string name="height_et">Рост...</string>
     <string name="weight_et">Вес...</string>
-    <string name="dateBirth">Дата рождения...</string>
+    <string name="date_birth_et">Дата рождения...</string>
 </resources>
