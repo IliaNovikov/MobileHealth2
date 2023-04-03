@@ -14,12 +14,12 @@
 
         <ImageButton
             android:id="@+id/btnSettings"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
             android:layout_gravity="right"
 
             android:backgroundTint="#00196F49"
-            android:scaleType="fitCenter"
+            android:scaleType="fitXY"
             android:src="@drawable/settings_icon"
             app:tint="#4CAF50" />
 
@@ -67,7 +67,7 @@
                 android:inputType="date"
                 android:onClick="dateClick"
                 android:paddingTop="20pt"
-                android:text="@string/date_birth"
+                android:text="@string/dateBirth"
                 android:textAlignment="center"
                 android:textColorHint="#A1A1A1" />
         </LinearLayout>
