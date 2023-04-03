@@ -1,4 +1,4 @@
-package adapters;
+package com.example.mobilehealth.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -17,7 +17,6 @@ import java.util.List;
 
 import interfaces.OnSectionClickInterface;
 import models.Section;
-import services.FragmentService;
 
 public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.ViewHolder> {
 
@@ -56,6 +55,7 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.ViewHold
     public int getItemCount() {
         return sections.size();
     }
+    //класс ViewHolder'а для recycleview
     class ViewHolder extends RecyclerView.ViewHolder{
         private ImageView imgSection;
         private TextView tvSection;

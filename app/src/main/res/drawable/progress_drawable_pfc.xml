@@ -12,7 +12,7 @@
         <clip>
             <shape>
                 <solid
-                    android:color="@color/pfc_color"/>
+                    android:color="#358038" />
             </shape>
         </clip>
     </item>
