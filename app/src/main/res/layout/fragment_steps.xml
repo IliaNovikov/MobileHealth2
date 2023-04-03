@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/candara"
-            android:text=""
+            android:text="@string/steps_today_et"
             android:textColor="@color/black"
             android:textSize="40sp" />
 
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/candara"
             android:gravity="center"
-            android:text=""
+            android:text="@string/of_et"
             android:textColor="@color/black"
             android:textSize="34sp" />
 
@@ -99,7 +99,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="5dp"
                     android:fontFamily="@font/candara"
-                    android:text="" />
+                    android:text="@string/achiv_1_et" />
 
                 <TextView
                     android:id="@+id/tvDayAchievement"
@@ -118,7 +118,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/candara"
-                    android:text="" />
+                    android:text="@string/achiv_2_et" />
 
             </LinearLayout>
 
