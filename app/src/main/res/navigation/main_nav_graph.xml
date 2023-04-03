@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_mainFragment_to_PFCFragment2"
             app:destination="@id/PFCFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_stepsFragment"
+            app:destination="@id/stepsFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -45,4 +48,9 @@
         android:name="com.example.mobilehealth.WorkoutFragment"
         android:label="fragment_workout"
         tools:layout="@layout/fragment_workout" />
+    <fragment
+        android:id="@+id/stepsFragment"
+        android:name="com.example.mobilehealth.StepsFragment"
+        android:label="fragment_steps"
+        tools:layout="@layout/fragment_steps" />
 </navigation>

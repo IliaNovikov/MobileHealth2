@@ -58,6 +58,7 @@ public class MainFragment extends Fragment {
                     case 1:
                         break;
                     case 2:
+                        ((MainActivity)getActivity()).navController.navigate(R.id.action_mainFragment_to_stepsFragment);
                         break;
                     case 3:
                         ((MainActivity)getActivity()).navController.navigate(R.id.action_mainFragment_to_medsFragment2);

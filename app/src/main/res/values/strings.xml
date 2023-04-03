@@ -18,5 +18,15 @@
     <string name="of_et">of</string>
     <string name="achiv_1_et">You meet the goal for</string>
     <string name="achiv_2_et">days in row!</string>
+    <string name="full_body_workout_title">Full body</string>
+    <string name="full_body_workout_short_description">Other muscles: none</string>
+    <string name="breast_workout_title">Breast</string>
+    <string name="breast_workout_short_description">Other muscles: shoulders, triceps</string>
+    <string name="back_workout_title">Back</string>
+    <string name="back_workout_short_description">Other muscles: biceps, forearms</string>
+    <string name="abs_workout_title">ABS</string>
+    <string name="abs_workout_short_description">Other muscles: legs</string>
+    <string name="legs_workout_title">Legs</string>
+    <string name="legs_workout_short_description">Other muscles: lower back</string>
 
 </resources>
