@@ -67,7 +67,7 @@
                 android:inputType="date"
                 android:onClick="dateClick"
                 android:paddingTop="20pt"
-                android:text="@string/dateBirth"
+                android:text=""
                 android:textAlignment="center"
                 android:textColorHint="#A1A1A1" />
         </LinearLayout>
