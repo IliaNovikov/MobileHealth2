@@ -64,6 +64,7 @@ public class MainFragment extends Fragment {
                         ((MainActivity)getActivity()).navController.navigate(R.id.action_mainFragment_to_medsFragment2);
                         break;
                     case 4:
+                        ((MainActivity)getActivity()).navController.navigate(R.id.action_mainFragment_to_breathTechnicFragment);
                         break;
                     case 5:
                         ((MainActivity)getActivity()).navController.navigate(R.id.action_mainFragment_to_workoutFragment2);

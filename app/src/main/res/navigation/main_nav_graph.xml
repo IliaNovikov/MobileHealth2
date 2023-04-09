@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_mainFragment_to_stepsFragment"
             app:destination="@id/stepsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_breathTechnicFragment"
+            app:destination="@id/breathTechnicFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -53,4 +56,9 @@
         android:name="com.example.mobilehealth.StepsFragment"
         android:label="fragment_steps"
         tools:layout="@layout/fragment_steps" />
+    <fragment
+        android:id="@+id/breathTechnicFragment"
+        android:name="com.example.mobilehealth.BreathTechnicFragment"
+        android:label="fragment_breath_technic"
+        tools:layout="@layout/fragment_breath_technic" />
 </navigation>
