@@ -15,10 +15,6 @@ public class MainActivityVM extends ViewModel {
         this.context = context;
     }
 
-    public void menuChangeFragment(){
-
-    }
-
     @Override
     protected void onCleared() {
         super.onCleared();
